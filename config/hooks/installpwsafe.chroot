@@ -1,1 +1,2 @@
 dpkg -i /other/passwordsafe-debian-0.94BETA.amd64.deb
+rm -r /other
