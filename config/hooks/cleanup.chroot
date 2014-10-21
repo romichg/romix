@@ -1,0 +1,15 @@
+for PACKAGE in apt-utils aptitude dselect
+do
+	if ! apt-get remove --purge --yes "${PACKAGE}"
+	then
+		echo "WARNING: ${PACKAGE} isn't installed"
+	fi
+done
+
+apt-get autoremove --yes || true
+
+# Removing unused files
+find . -name *~ -print0 | xargs -0 rm -f
+
+rm -rf /usr/share/lintian/*
+rm -rf /usr/share/linda/*
