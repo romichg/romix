@@ -17,6 +17,6 @@ lb config noauto \
 	--iso-preparer ""\
 	--iso-publisher ""\
 	--security true \
-	--bootappend-live "boot=live config quiet splash persistence persistence-encryption=luks persistence-media=removable persistence-label=urulu" \
+	--bootappend-live "boot=live splash persistence persistence-encryption=luks persistence-media=removable persistence-label=urulu" \
 	"${@}"
 

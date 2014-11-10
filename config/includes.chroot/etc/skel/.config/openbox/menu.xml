@@ -29,6 +29,16 @@
 			<action name="Restart"/>
 		</item>
 		<separator/>
+		<item label="Suspend">
+			<action name="Execute">
+				<execute>sudo pm-suspend</execute>
+			</action>
+		</item>
+		<item label="Lock">
+			<action name="Execute">
+				<execute>/etc/romix/screen-lock.sh</execute>
+			</action>
+		</item>
 		<item label="Exit">
 			<action name="Exit"/>
 		</item>

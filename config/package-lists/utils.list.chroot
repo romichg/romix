@@ -1,1 +1,1 @@
-pciutils usbutils ntfsprogs dosfstools vim
+pciutils usbutils ntfs-3g dosfstools vim gdisk

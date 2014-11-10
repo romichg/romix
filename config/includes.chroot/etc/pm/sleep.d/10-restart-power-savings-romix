@@ -1,0 +1,21 @@
+case $1 in
+    hibernate)
+        /etc/init.d/laptop-mode stop
+        ;;
+    suspend)
+        /etc/init.d/laptop-mode stop
+        ;;
+    thaw)
+        /etc/init.d/laptop-mode start
+	#Figure out if we are on AC or Batt and start pm-powersave accordingly
+	/etc/acpi/actions/romix_ac.sh
+        ;;
+    resume)
+        /etc/init.d/laptop-mode start
+	#Figure out if we are on AC or Batt and start pm-powersave accordingly
+	/etc/acpi/actions/romix_ac.sh
+        ;;
+    *)
+        echo Something is not right.
+        ;;
+esac

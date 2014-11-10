@@ -1,0 +1,22 @@
+ #!/bin/sh
+ #
+ # 00screensaver-lock: lock workstation on hibernate or suspend
+
+[ -f "/etc/romix/romix.conf" ] || exit 0
+. /etc/romix/romix.conf
+
+ username=`cat /tmp/romix/x-current-user`
+ userhome=/home/$username
+ export XAUTHORITY="$userhome/.Xauthority"
+ export DISPLAY=":0"
+
+  case "$1" in
+    hibernate|suspend)
+      [ "$LOCK_ON_SUSPEND" = 0 ] && exit 0
+      /etc/romix/screen-lock.sh  
+    ;;
+    thaw|resume)
+    ;;
+    *) exit $NA
+    ;;
+ esac

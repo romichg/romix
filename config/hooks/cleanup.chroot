@@ -13,3 +13,8 @@ find . -name *~ -print0 | xargs -0 rm -f
 
 rm -rf /usr/share/lintian/*
 rm -rf /usr/share/linda/*
+
+# Remove xsessions that don't exist here
+rm -f /usr/share/xsessions/openbox-gnome.desktop
+rm -f /usr/share/xsessions/openbox-kde.desktop
+

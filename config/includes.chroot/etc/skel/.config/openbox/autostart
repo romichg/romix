@@ -19,4 +19,5 @@
 . $HOME/.config/openbox/.fehbg &
 tint2 &
 parcellite &
-nm-applet &
+wicd-client -t &
+/etc/romix/setup-timeouts.sh &

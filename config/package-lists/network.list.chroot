@@ -1,1 +1,1 @@
-iputils-ping inetutils-traceroute iputils-tracepath netcat-openbsd ifupdown net-tools isc-dhcp-client wireless-tools tcpdump openssh-client network-manager-gnome gnome-bluetooth
+iputils-ping inetutils-traceroute iputils-tracepath netcat-openbsd ifupdown net-tools isc-dhcp-client wireless-tools wpasupplicant tcpdump openssh-client 
