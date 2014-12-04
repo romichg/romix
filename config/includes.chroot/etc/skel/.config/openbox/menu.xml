@@ -22,11 +22,67 @@
 			</action>
 		</item>
 		<separator/>
-		<item label="Reconfigure">
-			<action name="Reconfigure"/>
+		<item label="VirtualBox">
+			<action name="Execute">
+				<execute>virtualbox</execute>
+			</action>
 		</item>
-		<item label="Restart">
-			<action name="Restart"/>
+		<item label="Calculator">
+			<action name="Execute">
+				<execute>galculator</execute>
+			</action>
+		</item>
+		<item label="LibreOffice">
+			<action name="Execute">
+				<execute>libreoffice</execute>
+			</action>
+		</item>
+		<item label="Evince">
+			<action name="Execute">
+				<execute>evince</execute>
+			</action>
+		</item>
+		<item label="VLC">
+			<action name="Execute">
+				<execute>vlc</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Parcellite">
+			<action name="Execute">
+				<execute>parcellite</execute>
+			</action>
+		</item>
+		<item label="BlueTooth">
+			<action name="Execute">
+				<execute>bluetooth-applet</execute>
+			</action>
+		</item>
+		<item label="Shutter">
+			<action name="Execute">
+				<execute>shutter</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Nautilus">
+			<action name="Execute">
+				<execute>nautilus</execute>
+			</action>
+		</item>
+		<item label="FileZilla">
+			<action name="Execute">
+				<execute>filezilla</execute>
+			</action>
+		</item>
+		<item label="TightVncViewer">
+			<action name="Execute">
+				<execute>xtightvncviewer</execute>
+			</action>
+		</item>
+		<item label="Giggle">
+			<action name="Execute">
+				<execute>giggle</execute>
+			</action>
 		</item>
 		<separator/>
 		<item label="Suspend">

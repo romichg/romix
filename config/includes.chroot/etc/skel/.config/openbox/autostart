@@ -16,8 +16,9 @@
 #
 #xfce-mcs-manager &
 #xrandr -s 1440x900
+syndaemon -k -i 1.3 &
 . $HOME/.config/openbox/.fehbg &
 tint2 &
-parcellite &
 wicd-client -t &
+volumeicon &
 /etc/romix/setup-timeouts.sh &

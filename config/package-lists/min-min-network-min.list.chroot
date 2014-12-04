@@ -1,0 +1,1 @@
+ifupdown net-tools isc-dhcp-client openssh-client 

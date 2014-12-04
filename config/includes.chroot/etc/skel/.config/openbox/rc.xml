@@ -337,6 +337,26 @@
         <command>gnome-screenshot</command>
       </action>
     </keybind>
+    <keybind key="XF86MonBrightnessUp">
+      <action name="Execute">
+        <command>/etc/romix/backlight.sh inc</command>
+      </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+      <action name="Execute"> 
+        <command>/etc/romix/backlight.sh dec</command>
+      </action>
+    </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>/etc/romix/screen-lock.sh</command>
+      </action>
+    </keybind>
+    <keybind key="W-s">
+      <action name="Execute">
+        <command>sudo pm-suspend</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
