@@ -16,9 +16,10 @@
 #
 #xfce-mcs-manager &
 #xrandr -s 1440x900
-syndaemon -k -i 1.3 &
+syndaemon -k -i .5 &
 . $HOME/.config/openbox/.fehbg &
 tint2 &
 wicd-client -t &
 volumeicon &
 /etc/romix/setup-timeouts.sh &
+sudo /usr/sbin/rfkill block bluetooth &

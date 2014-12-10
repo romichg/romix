@@ -24,6 +24,7 @@ root	ALL=(ALL:ALL) ALL
 
 # Allow all sudoers to call pm-suspend without a pw
 %sudo	ALL = NOPASSWD:	/usr/sbin/pm-suspend
+%sudo	ALL = NOPASSWD:	/usr/sbin/rfkill
 
 # See sudoers(5) for more information on "#include" directives:
 

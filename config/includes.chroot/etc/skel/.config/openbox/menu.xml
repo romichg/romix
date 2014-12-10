@@ -85,6 +85,16 @@
 			</action>
 		</item>
 		<separator/>
+		<item label="Kill Wifi">
+			<action name="Execute">
+				<execute>sudo rfkill block wifi</execute>
+			</action>
+		</item>
+		<item label="Kill BlueTooth">
+			<action name="Execute">
+				<execute>sudo rfkill block bluetooth</execute>
+			</action>
+		</item>
 		<item label="Suspend">
 			<action name="Execute">
 				<execute>sudo pm-suspend</execute>
