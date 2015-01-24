@@ -17,7 +17,7 @@ lb config noauto \
 	--iso-preparer ""\
 	--iso-publisher ""\
 	--debian-installer live \
-	--linux-packages linux-image-3.16-0.bpo.2 \
+	--linux-packages linux-image-3.16.0-0.bpo.4 \
 	--security true \
 	--bootappend-live "boot=live splash persistence persistence-encryption=luks persistence-media=removable persistence-label=urulu" \
 	"${@}"
