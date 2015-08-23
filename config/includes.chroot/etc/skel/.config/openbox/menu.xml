@@ -79,11 +79,6 @@
 				<execute>xtightvncviewer</execute>
 			</action>
 		</item>
-		<item label="Giggle">
-			<action name="Execute">
-				<execute>giggle</execute>
-			</action>
-		</item>
 		<separator/>
 		<item label="Kill Wifi">
 			<action name="Execute">
