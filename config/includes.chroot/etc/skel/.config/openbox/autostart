@@ -19,7 +19,7 @@
 syndaemon -k -i .5 &
 . $HOME/.config/openbox/.fehbg &
 tint2 &
-wicd-client -t &
+#wicd-client -t &
 volumeicon &
 /etc/romix/setup-timeouts.sh &
 sudo /usr/sbin/rfkill block bluetooth &
