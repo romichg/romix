@@ -22,11 +22,6 @@
 			</action>
 		</item>
 		<separator/>
-		<item label="VirtualBox">
-			<action name="Execute">
-				<execute>virtualbox</execute>
-			</action>
-		</item>
 		<item label="Calculator">
 			<action name="Execute">
 				<execute>galculator</execute>

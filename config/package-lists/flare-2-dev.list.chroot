@@ -1,1 +1,1 @@
-build-essential
+git build-essential default-jdk
