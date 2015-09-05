@@ -1,1 +1,1 @@
-pm-utils laptop-mode-tools powertop acpi-support-base hdparm uswsusp
+pm-utils laptop-mode-tools=1.67-1 powertop acpi-support-base hdparm uswsusp sdparm
