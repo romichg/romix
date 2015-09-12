@@ -5,3 +5,19 @@ Pin-Priority: 900
 Package: laptop-mode-tools
 Pin: release n=stretch
 Pin-Priority: 910
+
+Package: live-boot
+Pin: release n=stretch
+Pin-Priority: 910
+
+Package: live-boot-initramfs-tools
+Pin: release n=stretch
+Pin-Priority: 910
+
+Package: live-config
+Pin: release n=stretch
+Pin-Priority: 910
+
+Package: live-config-systemd
+Pin: release n=stretch
+Pin-Priority: 910
