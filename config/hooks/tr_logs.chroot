@@ -1,5 +1,0 @@
-# Truncating logs
-for FILE in $(find /var/log/ -type f)
-do
-	: > ${FILE}
-done
