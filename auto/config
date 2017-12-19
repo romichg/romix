@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#--apt-http-proxy http://localhost:3128/ \
+
 set -e
 
 lb config noauto \
@@ -20,7 +22,6 @@ lb config noauto \
 	--memtest none \
 	--security true \
 	--updates true \
-#	--apt-http-proxy http://localhost:3128/ \
 	--linux-packages "linux-image linux-headers" \
 	--bootappend-live "boot=live splash components=hostname,user-setup,live-debconfig_passwd,sudo,locales,tzdata,util-linux,xserver-xorg persistence persistence-encryption=luks persistence-media=removable persistence-label=urulu" \
 	"${@}"
