@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="ROMIX">
-		<item label="Web browser">
-			<action name="Execute">
-				<execute>x-www-browser</execute>
-			</action>
-		</item>
-		<item label="IceDove">
-			<action name="Execute">
-				<execute>icedove</execute>
-			</action>
-		</item>
 		<item label="Terminal emulator">
 			<action name="Execute">
 				<execute>x-terminal-emulator</execute>
@@ -27,30 +17,10 @@
 				<execute>galculator</execute>
 			</action>
 		</item>
-		<item label="LibreOffice">
-			<action name="Execute">
-				<execute>libreoffice</execute>
-			</action>
-		</item>
-		<item label="Evince">
-			<action name="Execute">
-				<execute>evince</execute>
-			</action>
-		</item>
-		<item label="VLC">
-			<action name="Execute">
-				<execute>vlc</execute>
-			</action>
-		</item>
 		<separator/>
 		<item label="Parcellite">
 			<action name="Execute">
 				<execute>parcellite</execute>
-			</action>
-		</item>
-		<item label="BlueTooth">
-			<action name="Execute">
-				<execute>bluetooth-applet</execute>
 			</action>
 		</item>
 		<item label="Shutter">
@@ -87,7 +57,7 @@
 		</item>
 		<item label="Suspend">
 			<action name="Execute">
-				<execute>sudo pm-suspend</execute>
+				<execute>systemctl suspend</execute>
 			</action>
 		</item>
 		<item label="Lock">

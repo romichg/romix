@@ -4,20 +4,23 @@ set -e
 
 lb config noauto \
 	--architectures amd64 \
-	--linux-flavours amd64 \
+	--archive-areas "main contrib non-free"	\
 	--apt-recommends false \
  	--apt apt \
 	--apt-indices false \
-	--memtest none \
+	--apt-secure true \
 	--apt-source-archives false \
-	--distribution jessie \
-	--archive-areas "main contrib non-free"	\
+	--distribution stretch \
 	--firmware-chroot true \
-	--linux-packages linux-image-4.1.0-0.bpo.1 \
 	--iso-application "ROMIX" \
 	--iso-preparer ""\
 	--iso-publisher ""\
 	--debian-installer live \
+	--linux-flavours amd64 \
+	--memtest none \
 	--security true \
-	--bootappend-live "boot=live splash persistence persistence-encryption=luks persistence-media=removable persistence-label=urulu" \
+	--updates true \
+#	--apt-http-proxy http://localhost:3128/ \
+	--linux-packages "linux-image linux-headers" \
+	--bootappend-live "boot=live splash components=hostname,user-setup,live-debconfig_passwd,sudo,locales,tzdata,util-linux,xserver-xorg persistence persistence-encryption=luks persistence-media=removable persistence-label=urulu" \
 	"${@}"

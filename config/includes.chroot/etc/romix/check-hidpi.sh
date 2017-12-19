@@ -26,16 +26,15 @@ fi
 
 if [ $HIDPI -eq 1 ] && [ $HATE_HIDPI -ne 1 ]
 then
-  xsettingsd &
   #Set DPI in X, even though it seems useless
   xrandr --dpi $DPI
   #Set Dunst Font
-  sed -i "s/"DejaVu Sans",*/"DejaVu Sans",32/" $HOME/.config/dunst/dunstrc
+  sed -i "s/"DejaVu Sans",*/"DejaVu Sans",16/" $HOME/.config/dunst/dunstrc
   #Set normal dpi in .Xresources
   sed -i "s/Xft.dpi.*/Xft.dpi: $DPI/" $HOME/.Xresources 
   #Set fonts in rxvt
-  sed -i "s/xft:terminus:pixelsize=.*:antialias=true:hinting=true/xft:terminus:pixelsize=26:antialias=true:hinting=true/" $HOME/.Xresources 
-  sed -i "s/xft:terminus:bold:pixelsize=.*:antialias=true:hinting=true/xft:terminus:bold:pixelsize=26:antialias=true:hinting=true/" $HOME/.Xresources 
+  sed -i "s/xft:terminus:pixelsize=.*:antialias=true:hinting=true/xft:terminus:pixelsize=27:antialias=true:hinting=true/" $HOME/.Xresources 
+  sed -i "s/xft:terminus:bold:pixelsize=.*:antialias=true:hinting=true/xft:terminus:bold:pixelsize=27:antialias=true:hinting=true/" $HOME/.Xresources 
   #Set up tint2
   sed -i "s/panel_size.*/panel_size = 98% 55/" $HOME/.config/tint2/tint2rc
   sed -i "s/task_maximum_size.*/task_maximum_size = 240 55/" $HOME/.config/tint2/tint2rc
