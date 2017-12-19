@@ -1,7 +1,7 @@
 ## Phylosophy
-We believe that it is important to have a system  that is both secure and is easy to use. We imagined a system that is protected from malware, randsomware, behavior tracking, and hacking. A system that does its best to let you consume and create data and protect it, protect you, and itself at the same time. 
+We believe that it is important to have a system  that is both secure and is easy to use. We imagined a system that is protected from malware, randsomware, behavior tracking, and hacking. A system that does its best to let you consume, create and protect data, protect you, and protect itself. 
 
-The challenge is that with all the components that make up a consumer computing environment today, it is impossible to fully secure it. Therefore we decided to build on the idea of resilience - even if a single or multiple components get compromised, they would be automatically restored to pristine state without affecting any data. Hence, the idea of a read only system was born. 
+The challenge is that, with all the components that make up a consumer computing environment today, it is impossible to fully secure a system. One has to go by the assumption that there are two kinds of computer systems - ones that are hacked and the ones that will be hacked. Therefore we decided to build on the idea of resilience - even if a single or multiple components get compromised, they would be automatically restored to pristine state without affecting any data. Hence, the idea of a read only system was born. 
 
 We also were tired of all the bloatware and completely unnecessary components. These are both hard to secure since they have a bigger attack surface and  they consume too much unnecessary resources. Hence, an idea to have a minimalist read only system was born.
 
@@ -43,7 +43,7 @@ let it run and at the end you'll have an ISO image that you need to copy to your
 
 ```sudo dd if=./<name iso image> of=<device of your USB key>```
 For exmaple 
-```sudo dd if=./live of=/dev/sdc```
+```sudo dd if=./live-image-amd64.hybrid.iso of=/dev/sdc```
 
 
 ## Customizing & Configuring
