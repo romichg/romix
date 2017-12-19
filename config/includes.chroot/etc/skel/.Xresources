@@ -4,7 +4,7 @@ Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcddefault
-Xft.dpi: 180
+Xft.dpi: 168
 
 
 URxvt*geometry: 100x40
@@ -24,7 +24,7 @@ URxvt*transparent: true
 
 ! shading - 0 to 99 darkens, 101 to 200 lightens.
 !   Don't use with tintColor; just use a darker or lighter color instead.
-URxvt*shading: 12
+URxvt*shading: 30
 
 ! scrollback buffer lines - 65535 is max on most machines (64 is default)
 URxvt*saveLines: 12000
@@ -68,8 +68,8 @@ URxvt*background: Black
 !
 ! Xft: Terminus fonts
 !  Fedora/debian packages: terminus-fonts/xfonts-terminus
-URxvt*font: xft:terminus:pixelsize=25:antialias=true:hinting=true
-URxvt*boldFont: xft:terminus:bold:pixelsize=25:antialias=true:hinting=true
+URxvt*font: xft:terminus:pixelsize=26:antialias=true:hinting=true
+URxvt*boldFont: xft:terminus:bold:pixelsize=26:antialias=true:hinting=true
 
 ! Traditional fonts - a more traditional font setup in lieu of xft
 !URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1

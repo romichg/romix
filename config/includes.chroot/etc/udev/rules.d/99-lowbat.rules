@@ -1,0 +1,3 @@
+#https://wiki.archlinux.org/index.php/laptop#Udev_events
+# Suspend the system when battery level drops to 5% or lower
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", ATTR{capacity}=="[6-8]", RUN+="/etc/romix/poer.sh lowbat"

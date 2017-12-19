@@ -1,0 +1,15 @@
+[ -d ./MTP_Transfer ] || mkdir MTP_Transfer
+
+if [ "$1" = "MOUNT" ]
+then
+  jmtpfs ./MTP_Transfer
+  exit $?
+fi
+
+if [ "$1" = "UMOUNT" ]
+then
+   fusermount -u ./MTP_Transfer
+   exit $?
+fi
+
+echo "USAGE: phoneConnect MOUNT|UMOUNT"

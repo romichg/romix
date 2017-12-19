@@ -1,1 +1,1 @@
-xserver-xorg-core xserver-xorg xserver-xorg-video-intel=2:2.21.15-2~bpo70+1 xserver-xorg-video-vesa xinit rxvt-unicode slim xfonts-75dpi xfonts-100dpi alsa-base alsa-utils xfonts-terminus
+xserver-xorg-core xserver-xorg xserver-xorg-input-all xserver-xorg-input-synaptics xserver-xorg-video-all xserver-xorg-video-intel xinit rxvt-unicode slim xfonts-75dpi xfonts-100dpi alsa-utils xfonts-terminus

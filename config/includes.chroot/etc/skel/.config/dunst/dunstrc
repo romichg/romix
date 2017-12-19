@@ -1,5 +1,5 @@
 [global]
-    font = Courier-16
+    font = "DejaVu Sans",32
 
     # The format of the message. Possible variables are:
     #   %a  appname
