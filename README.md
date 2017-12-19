@@ -83,7 +83,7 @@ By default we encrypt our persistence volume and persist the following configura
 ./modprobe.d/alsa-base.conf
 ```
 
-**AND** any changes to /home
+**AND** any changes to ```/home```
 
 
 To create persistence you need to create a separate partition, encrypt it, create a file system on it, and tell our live system to find it, ask for password, and properly mount it.
@@ -92,18 +92,23 @@ To create persistence you need to create a separate partition, encrypt it, creat
 ```sudo fdisk <USB Device, ex /dev/sdc>```
 Follow propts to create a new partition. Note the new partition number.
 2. Encrypt the partition 
-```cryptsetup luksFormat <USB device+partition ex. /dev/sdc3>```
+```cryptsetup luksFormat <USB device+partition>``` _ex. /dev/sdc3_
 3. Mount the partition and create a file system
 ```
-cryptsetup luksOpen <USB device+partition number ex. /dev/sdc3> live
+cryptsetup luksOpen <USB device+partition number>
+``` 
+_ex. /dev/sdc3_
+```
 mkfs.ext4 -L urulu /dev/mapper/live
 ```
 Note: It is important to lable the file system “urulu” as specified above. Why? Cause Urulu is the greatest rock! And that is how the system will know to attempt to mount it.
+
 4. Mount the ifle sytem and copy some stuff
 ```
 mount /dev/mapper/live /mnt
 tar xvf persistence.tar -C /mnt
 ```
+
 5. Unmount and close. We are ready to go
 ```
 umount /mnt
