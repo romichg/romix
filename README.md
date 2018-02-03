@@ -122,12 +122,24 @@ Squid works fine. Install squid
 
 ```sudo apt-get install squid```
 
-And use this for the config file. 
+And use this for the config file.
+
+Before you use the file make sure that cache_dir exists and is owned by "proxy" user. You can change the cache_dir to whatever works on your system 
 
 ```
+acl Safe_ports port 80		# http
+acl Safe_ports port 21		# ftp
+acl Safe_ports port 443		# https
+acl Safe_ports port 70		# gopher
+acl Safe_ports port 210		# wais
+acl Safe_ports port 1025-65535	# unregistered ports
+acl Safe_ports port 280		# http-mgmt
+acl Safe_ports port 488		# gss-http
+acl Safe_ports port 591		# filemaker
+acl Safe_ports port 777		# multiling http
 acl CONNECT method CONNECT
 acl SSL_ports port 443
-cache_dir ufs /media/romix/package_cache 4000 16 256
+cache_dir ufs /media/romix/http_cache/ 4000 16 256
 cache_mem 8 MB
 coredump_dir /var/spool/squid3
 http_access allow localhost
