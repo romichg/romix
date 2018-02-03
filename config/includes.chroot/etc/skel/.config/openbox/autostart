@@ -23,5 +23,11 @@ syndaemon -k -i .5 &
 tint2 &
 volumeicon &
 sudo /usr/sbin/rfkill block bluetooth &
-xset s $SCREEN_LOCK_SEC
-xss-lock -- /etc/romix/screen-lock.sh &
+xset s $(( $SCREEN_LOCK_SEC - 60 )) 60
+xss-lock -n /etc/romix/dimlights.sh  -- /etc/romix/screen-lock.sh &
+
+conky &
+rxvt -geometry 157x29 &
+rxvt -geometry 78x17 &
+rxvt -geometry 78x17 &
+

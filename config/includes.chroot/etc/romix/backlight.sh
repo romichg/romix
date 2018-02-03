@@ -44,6 +44,11 @@ setBacklight() {
       # new brightness value
       new_brightness=$(( $max_brightness * $2 / 100 ))
      ;;
+     get)
+      old_brightness_p=$(( 100 * $old_brightness / $max_brightness ))
+      echo $old_brightness_p
+      return 
+     ;;
    esac
 
    sudo /etc/romix/setBacklight.sh $new_brightness $handler
@@ -61,6 +66,14 @@ case "$1" in
   set)
     setBacklight set $2
     /etc/romix/notifyUser.sh "-h int:value:$new_brightness_p "%p""
+  ;;
+  dim)
+    current=$(setBacklight get)
+    trap 'exit 0' TERM INT
+    trap "setBacklight set $current; kill %%" EXIT
+    setBacklight set 1 
+    sleep 2147483647 &
+    wait
   ;;
 esac
 

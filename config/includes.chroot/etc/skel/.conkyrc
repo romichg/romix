@@ -25,7 +25,7 @@
 
 background yes
 use_xft yes
-xftfont DejaVu Sans Mono:size=7.5
+xftfont DejaVu Sans Mono:size=9
 xftalpha 0.5
 
 own_window yes
@@ -69,26 +69,26 @@ out_to_stderr no
 no_buffers yes
 
 TEXT
-${color grey}MHz:$color $freq
-${color grey}Batt:$color $battery
-${color grey}RAM:$color $mem/$memmax
-${color grey}Swap:$color $swap/$swapmax
-${color grey}CPU:$color $cpu%
-${color grey}IO:$color $diskio
-${color grey}Net Up:$color ${upspeed wlan0}
-${color grey}Net Down:$color ${downspeed wlan0}
+${color black}MHz:$color $freq
+${color black}Batt:$color $battery
+${color black}RAM:$color $mem/$memmax
+${color black}Swap:$color $swap/$swapmax
+${color black}CPU:$color $cpu%
+${color black}IO:$color $diskio
+${color black}Net Up:$color ${upspeed wlan0}
+${color black}Net Down:$color ${downspeed wlan0}
 $hr
-${color grey}Top CPU Name              CPU%
-${color lightgrey} ${top name 1} ${top cpu 1}
-${color lightgrey} ${top name 2} ${top cpu 2}
-${color lightgrey} ${top name 3} ${top cpu 3}
-${color lightgrey} ${top name 4} ${top cpu 4}
-${color lightgrey} ${top name 5} ${top cpu 5}
+${color gray}Top CPU
+${color gray} ${top name 1} ${top cpu 1}
+${color gray} ${top name 2} ${top cpu 2}
+${color gray} ${top name 3} ${top cpu 3}
+${color gray} ${top name 4} ${top cpu 4}
+${color gray} ${top name 5} ${top cpu 5}
 $hr
-${color grey}Top MEM Name              MEM%
-${color lightgrey} ${top_mem name 1} ${top_mem mem_res 1}
-${color lightgrey} ${top_mem name 2} ${top_mem mem_res 2}
-${color lightgrey} ${top_mem name 3} ${top_mem mem_res 3}
-${color lightgrey} ${top_mem name 4} ${top_mem mem_res 4}
-${color lightgrey} ${top_mem name 5} ${top_mem mem_res 5}
+${color gray}Top MEM Name
+${color gray} ${top_mem name 1} ${top_mem mem_res 1}
+${color gray} ${top_mem name 2} ${top_mem mem_res 2}
+${color gray} ${top_mem name 3} ${top_mem mem_res 3}
+${color gray} ${top_mem name 4} ${top_mem mem_res 4}
+${color gray} ${top_mem name 5} ${top_mem mem_res 5}
 

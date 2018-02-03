@@ -1,3 +1,5 @@
+#!/bin/bash
+
 [ -x "/usr/bin/notify-send" ] || exit 1
 [ -f "/etc/romix/romix.conf" ] || exit 1
 
@@ -9,12 +11,18 @@
 
 case "$1" in
   batcritical )
-
-    /etc/romix/notifyUser.sh `BATTERY CRITICAL`
-    systemctl hibernate
+    /etc/romix/notifyUser.sh 'BATTERY CRITICAL'
+    logger "Battery Critical"
+    if [ $HIBERNATE_ON_CRITICAL -eq 1 ] 
+    then
+       systemctl hibernate
+    else 
+       systemctl suspend
+    fi
   ;;
   batlow)
-    /etc/romix/notifyUser.sh `LOW CRITICAL`
+    /etc/romix/notifyUser.sh 'BATTERY LOW'
+    logger "Battery Low"
     [ -x "/usr/bin/beep" ] && /usr/bin/beep -f 800 -r 5 -d 100 -l 400
   ;;
   ac)
@@ -25,3 +33,4 @@ case "$1" in
   ;;
 esac
 
+exit 0

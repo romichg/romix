@@ -107,7 +107,7 @@ mouse_scroll_down = iconify
 # Battery
 battery = 1
 battery_low_status = 10
-battery_low_cmd = notify-send "battery low"
+battery_low_cmd = /etc/romix/checkbat.sh 
 battery_hide = never
 bat1_font = sans 14
 bat2_font = sans 16
