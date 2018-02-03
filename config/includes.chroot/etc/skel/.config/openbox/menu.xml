@@ -45,6 +45,11 @@
 			</action>
 		</item>
 		<separator/>
+		<item label="Audio Control">
+			<action name="Execute">
+				<execute>pavucontrol</execute>
+			</action>
+		</item>
 		<item label="Kill Wifi">
 			<action name="Execute">
 				<execute>sudo rfkill block wifi</execute>
