@@ -1,4 +1,4 @@
-## Phylosophy
+## Philosophy
 We believe that it is important to have a system  that is both secure and is easy to use. We imagined a system that is protected from malware, randsomware, behavior tracking, and hacking. A system that does its best to let you consume, create and protect data, protect you, and protect itself. 
 
 The challenge is that, with all the components that make up a consumer computing environment today, it is impossible to fully secure a system. One has to go by the assumption that there are two kinds of computer systems - ones that are hacked and the ones that will be hacked. Therefore we decided to build on the idea of resilience - even if a single or multiple components get compromised, they would be automatically restored to pristine state without affecting any data. Hence, the idea of a read only system was born. 
@@ -68,7 +68,7 @@ Otherwise the sound will not work.
 
 Since your live system is read only nothing gets stored between reboots. Persistence is a way to keep certain files once the system is powered off.
 
-**_But hang on mate, why do I need t keep certain files in a read only system? Doesn't that defeat the purpose?_**
+**_But hang on mate, why do I need to keep certain files persistent in a read only system? Doesn't that defeat the purpose?_**
 
 Yes and no. Sure when you keep something it already means that it is not 100% read only. On the other hand, there are certain conveniences that are lost when you have 100% read only system. For example say you wanted to save the hotel's wifi password. Or say you create a document, and you don't want it to be lost. For those reasons we create persistence. Naturally we encrypt anything we store.
 
