@@ -16,18 +16,29 @@
 #
 #xfce-mcs-manager &
 #xrandr -s 1440x900
+
+
+# Set the distribution specific environment variables
 . /etc/romix/romix.conf
 
+# syndaemon - a program that monitors keyboard activity and disables the touchpad when the keyboard is being used.
 syndaemon -k -i .5 &
+
+# Set the wallpaper
 . $HOME/.config/openbox/.fehbg &
+
+# Start the task bar
 tint2 &
+
+# Start the volume control
 volumeicon &
+
+# Disable BlueTooth
 sudo /usr/sbin/rfkill block bluetooth &
+
+# Set the screensaver
 xset s $(( $SCREEN_LOCK_SEC - 60 )) 60
 xss-lock -n /etc/romix/dimlights.sh  -- /etc/romix/screen-lock.sh &
 
+# Start the resource monitor
 conky &
-rxvt -geometry 157x29 &
-rxvt -geometry 78x17 &
-rxvt -geometry 78x17 &
-
