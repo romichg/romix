@@ -12,7 +12,7 @@ lb config noauto \
 	--apt-indices false \
 	--apt-secure true \
 	--apt-source-archives false \
-	--distribution stretch \
+	--distribution buster \
 	--firmware-chroot true \
 	--iso-application "ROMIX" \
 	--iso-preparer ""\
