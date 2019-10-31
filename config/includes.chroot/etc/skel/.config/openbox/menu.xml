@@ -23,9 +23,9 @@
 				<execute>parcellite</execute>
 			</action>
 		</item>
-		<item label="Shutter">
+		<item label="FlameShot">
 			<action name="Execute">
-				<execute>shutter</execute>
+				<execute>flameshot gui</execute>
 			</action>
 		</item>
 		<separator/>
