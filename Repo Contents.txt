@@ -1,0 +1,19 @@
+Repo Contents
+
+auto - 3 1KB files
+
+config
+config/archives/backports.list.chroot
+config/bootloaders/isolinux - isolinux bootloaders and its configuration files
+config/hooks/live
+config/hooks/normal
+config/includes.chroot/etc
+config/includes.chroot/usr/share/romix/images - some wallpapers
+config/package-lists - package lists [IMPORTANT]
+
+opt
+opt/experimental - 3 small files
+opt/hooks/stripped.chroot
+opt/pkgs - package lists?
+
+persistence.tar - sample persistence configuration file
