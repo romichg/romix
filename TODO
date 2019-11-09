@@ -1,0 +1,7 @@
+dunst configuration needs proper font
+sceen up/down don't don't display notifications
+audio up/down dont' display notifications
+check tlp configuration
+iptables forward table needs br+ to forward everything
+phoneConnect is not executtable 
+Add pkgs from ~/Installed/installed.txt
