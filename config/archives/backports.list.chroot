@@ -1,1 +1,1 @@
-deb http://http.debian.net/debian stretch-backports main non-free contrib
+deb http://http.debian.net/debian buster-backports main non-free contrib
