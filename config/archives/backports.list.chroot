@@ -1,1 +1,1 @@
-deb http://http.debian.net/debian buster-backports main non-free contrib
+deb http://http.debian.net/debian bullseye-backports main non-free contrib
