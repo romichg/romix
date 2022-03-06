@@ -1,1 +1,1 @@
-ifupdown net-tools isc-dhcp-client openssh-client apt-transport-https ca-certificates
+ifupdown net-tools isc-dhcp-client openssh-client apt-transport-https ca-certificates iptables

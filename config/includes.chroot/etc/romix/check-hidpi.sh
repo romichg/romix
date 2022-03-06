@@ -33,8 +33,8 @@ then
   #Set normal dpi in .Xresources
   sed -i "s/Xft.dpi.*/Xft.dpi: $DPI/" $HOME/.Xresources 
   #Set fonts in rxvt
-  sed -i "s/xft:Liberation Mono:pixelsize=.*:antialias=true:hinting=true/xft:Liberation Mono:pixelsize=27:antialias=true:hinting=true/" $HOME/.Xresources 
-  sed -i "s/xft:Liberation Mono:bold:pixelsize=.*:antialias=true:hinting=true/xft:Liberation Mono:bold:pixelsize=27:antialias=true:hinting=true/" $HOME/.Xresources 
+  sed -i "s/xft:Liberation Mono:pixelsize=.*:antialias=true:hinting=true/xft:Liberation Mono:pixelsize=24:antialias=true:hinting=true/" $HOME/.Xresources 
+  sed -i "s/xft:Liberation Mono:bold:pixelsize=.*:antialias=true:hinting=true/xft:Liberation Mono:bold:pixelsize=24:antialias=true:hinting=true/" $HOME/.Xresources 
   #Set up tint2
   sed -i "s/panel_size.*/panel_size = 98% 55/" $HOME/.config/tint2/tint2rc
   sed -i "s/task_maximum_size.*/task_maximum_size = 240 55/" $HOME/.config/tint2/tint2rc
