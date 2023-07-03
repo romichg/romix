@@ -2,11 +2,14 @@
 *filter
 :INPUT ACCEPT [368:102354]
 -A INPUT -i lo -j ACCEPT
+-A INPUT -i br+ -j ACCEPT
+-A INPUT -i vboxnet+ -j ACCEPT
 -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 -A INPUT -m limit --limit 5/hour -j LOG --log-prefix "iptables denied: " --log-level 7
 -A INPUT -j DROP
 :FORWARD ACCEPT [0:0]
 -A FORWARD -i lo -j ACCEPT
+-A FORWARD -i br+ -j ACCEPT
 -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 -A FORWARD -m limit --limit 5/hour -j LOG --log-prefix "iptables forward denied: " --log-level 7
 -A FORWARD -j DROP

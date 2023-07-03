@@ -7,7 +7,7 @@ Xft.lcdfilter: lcddefault
 Xft.dpi: 168
 
 
-URxvt*geometry: 100x40
+URxvt*geometry: 100x30
 
 !Fade the text by the given percentage when focus is lost. This is neat, when I switch to a different window, or switch to a different machine ala synergy, it will fade the screen slightly.
 URxvt*fading: 35
@@ -63,13 +63,13 @@ URxvt*background: Black
 !
 ! Xft: Liberation fonts
 !  Fedora/debian packages: liberation-mono-fonts/ttf-liberation
-!URxvt*font: xft:Liberation Mono:pixelsize=13:antialias=true:hinting=true
-!URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=13:antialias=true:hinting=true
+URxvt*font: xft:Liberation Mono:pixelsize=27:antialias=true:hinting=true
+URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=27:antialias=true:hinting=true
 !
 ! Xft: Terminus fonts
 !  Fedora/debian packages: terminus-fonts/xfonts-terminus
-URxvt*font: xft:terminus:pixelsize=26:antialias=true:hinting=true
-URxvt*boldFont: xft:terminus:bold:pixelsize=26:antialias=true:hinting=true
+!URxvt*font: xft:terminus:pixelsize=26:antialias=true:hinting=true
+!URxvt*boldFont: xft:terminus:bold:pixelsize=26:antialias=true:hinting=true
 
 ! Traditional fonts - a more traditional font setup in lieu of xft
 !URxvt*font:-*-courier-medium-r-normal-*-14-*-*-*-*-*-iso8859-1
