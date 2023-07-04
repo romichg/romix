@@ -6,13 +6,13 @@ set -e
 
 lb config noauto \
 	--architectures amd64 \
-	--archive-areas "main contrib non-free"	\
+	--archive-areas "main contrib non-free-firmware non-free"	\
 	--apt-recommends false \
  	--apt apt \
 	--apt-indices false \
 	--apt-secure true \
 	--apt-source-archives false \
-	--distribution bullseye \
+	--distribution bookworm \
 	--firmware-chroot true \
 	--iso-application "ROMIX" \
 	--iso-preparer ""\

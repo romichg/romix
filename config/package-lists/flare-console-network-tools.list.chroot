@@ -1,1 +1,1 @@
-iputils-ping inetutils-traceroute iputils-tracepath netcat tcpdump nmap dnsutils telnet iperf
+iputils-ping inetutils-traceroute iputils-tracepath netcat-traditional tcpdump nmap dnsutils telnet iperf
