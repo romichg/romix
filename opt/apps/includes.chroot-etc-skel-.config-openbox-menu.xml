@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="ROMIX">
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		<item label="Office">
+			<action name="Execute">
+				<execute>libreoffice</execute>
+			</action>
+		</item>
+		<item label="PDF Viewer">
+			<action name="Execute">
+				<execute>qpdfview</execute>
+			</action>
+		</item>
+		<item label="Image Viewer">
+			<action name="Execute">
+				<execute>eog</execute>
+			</action>
+		</item>
+		<item label="Video Viewer">
+			<action name="Execute">
+				<execute>vlc</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Calculator">
+			<action name="Execute">
+				<execute>galculator</execute>
+			</action>
+		</item>
+		<item label="SIP Phone">
+			<action name="Execute">
+				<execute>twinkle</execute>
+			</action>
+		</item>
+		<item label="PW Safe">
+			<action name="Execute">
+				<execute>pwsafe</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Terminal emulator">
+			<action name="Execute">
+				<execute>x-terminal-emulator</execute>
+			</action>
+		</item>
+		<item label="Parcellite">
+			<action name="Execute">
+				<execute>parcellite</execute>
+			</action>
+		</item>
+		<item label="FlameShot">
+			<action name="Execute">
+				<execute>flameshot gui</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Nautilus">
+			<action name="Execute">
+				<execute>nautilus</execute>
+			</action>
+		</item>
+		<item label="FileZilla">
+			<action name="Execute">
+				<execute>filezilla</execute>
+			</action>
+		</item>
+		<item label="TightVncViewer">
+			<action name="Execute">
+				<execute>xtightvncviewer</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Audio Control">
+			<action name="Execute">
+				<execute>pavucontrol</execute>
+			</action>
+		</item>
+		<item label="Kill Wifi">
+			<action name="Execute">
+				<execute>sudo rfkill block wifi</execute>
+			</action>
+		</item>
+		<item label="Kill BlueTooth">
+			<action name="Execute">
+				<execute>sudo rfkill block bluetooth</execute>
+			</action>
+		</item>
+		<item label="Suspend">
+			<action name="Execute">
+				<execute>systemctl suspend</execute>
+			</action>
+		</item>
+		<item label="Lock">
+			<action name="Execute">
+				<execute>/etc/romix/screen-lock.sh</execute>
+			</action>
+		</item>
+		<item label="Exit">
+			<action name="Exit"/>
+		</item>
+	</menu>
+</openbox_menu>
